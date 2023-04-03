@@ -1,0 +1,116 @@
+.searchbar {
+  position: fixed; }
+  .searchbar__input {
+    border: none;
+    color: #fff;
+    background-color: rgba(211, 211, 211, 0.2);
+    border-radius: 5rem;
+    padding: .5rem 4rem;
+    border: 1px solid transparent;
+    z-index: 1;
+    transition: all .7s; }
+    .searchbar__input:focus {
+      outline: none;
+      border: 1px solid #FE6244; }
+  .searchbar__icon {
+    position: relative;
+    left: 3rem;
+    transition: all .7s; }
+  .searchbar:focus-within .searchbar__icon {
+    color: #FE6244; }
+
+.newTweet {
+  min-width: 28rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0; }
+  .newTweet__label {
+    width: 20%; }
+  .newTweet__form {
+    width: 80%; }
+    .newTweet__form-buttons {
+      display: flex;
+      justify-content: space-between; }
+  .newTweet__input {
+    color: #fff;
+    background-color: transparent;
+    overflow-x: auto;
+    overflow-y: none;
+    resize: none;
+    height: 1.5rem;
+    width: 100%; }
+    .newTweet__input:focus {
+      outline: none; }
+  .newTweet__icons {
+    display: flex;
+    gap: .5rem; }
+
+.navbar {
+  width: 20rem;
+  margin-top: 2rem; }
+  .navbar :not(:last-child) {
+    margin-bottom: 1rem; }
+  .navbar__logo:link, .navbar__logo:visited {
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    transition: all .5s;
+    border-radius: 50%; }
+  .navbar__logo:hover {
+    background-color: rgba(211, 211, 211, 0.1); }
+  .navbar__link:link, .navbar__link:visited {
+    text-decoration: none;
+    padding: .7rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    transition: all .5s; }
+  .navbar__link:hover {
+    background-color: rgba(211, 211, 211, 0.1); }
+  .navbar__btn-reg {
+    font-size: 1.5rem;
+    padding: .7rem 1rem;
+    border-radius: 5rem;
+    transition: all .5s; }
+    .navbar__btn-reg:hover {
+      background-color: rgba(211, 211, 211, 0.1); }
+  .navbar__btn-tweet {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: #FE6244;
+    border-radius: 5rem;
+    padding: .7rem 1rem;
+    transition: all .5s; }
+    .navbar__btn-tweet:hover {
+      background-color: #FC2947; }
+
+.sidebar {
+  margin-top: 1rem; }
+  .sidebar__container {
+    margin: 5rem 0 0 2rem; }
+  .sidebar__heading {
+    font-weight: bold;
+    font-size: 1.4rem; }
+  .sidebar__btn {
+    color: #FE6244;
+    text-align: start;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    width: 100%;
+    transition: all .5s; }
+    .sidebar__btn:hover {
+      background-color: rgba(211, 211, 211, 0.2); }
+
+.home {
+  max-width: 33vw; }
+  .home__header {
+    margin-bottom: 1rem; }
+  .home__btn {
+    color: #697683;
+    transition: background-color .5s;
+    width: calc(33vw / 2);
+    padding: .7rem 0; }
+    .home__btn:hover {
+      background-color: rgba(211, 211, 211, 0.2); }
+    .home__btn-active {
+      color: #fff;
+      border-bottom: 2px solid #FE6244; }
